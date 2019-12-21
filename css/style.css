@@ -1,0 +1,125 @@
+body
+{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+
+.page
+{
+    width: 100vw;
+    height: 100vh;
+    
+    /*border-bottom: 1px groove rgba(255, 255, 255, 0.7);
+    border-bottom-left-radius: 5%;*/
+}
+
+div#headerMenu
+{
+    width: inherit;
+    height: 5%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#logoMenu
+{
+    width: 10%;
+}
+
+#logo
+{
+    font-size: 25px;
+    color: rgb(255, 255, 255,0.7);
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 1px 0px rgb(255, 255, 255,.2), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+div#sectionMenu
+{
+    width: 90%;
+    display: inherit;
+}
+
+div#blankSpace
+{
+    width: 49%;
+}
+
+div#sectionMenu table
+{
+    width: 49.5%;
+    margin: 0;
+    padding: 0;
+}
+
+div#sectionMenu td
+{
+    margin: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 30px;
+    font-size: 25px;
+    color: rgb(255, 255, 255,0.7);
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 1px 0px rgb(255, 255, 255,.2), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+.page#StartPage
+{
+    background-color: #202020;
+    text-align: center;
+}
+
+div#mainName
+{
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p#name
+{
+    text-decoration-style: double;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255,.2), 0px -1px 0px rgba(0,0,0,.7);
+}
+
+.div-transparent
+{
+	content: "";
+	position: absolute;
+	bottom: -7px;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(255, 255, 255, 0.7), transparent);
+}
+
+.divider-arrow-down:after
+{
+    content: "";
+	position: absolute;
+	z-index: 1;
+	bottom: -7px;
+	left: calc(50% - 7px);
+	width: 14px;
+	height: 14px;
+	transform: rotate(45deg);
+	background-color: #202020;
+	border-bottom: 1px solid rgb(255, 255, 255, 0.7);
+    border-right: 1px solid rgb(255, 255, 255, 0.7);
+}
+
+.page#BioPage
+{
+    background-color: #202020;
+    text-align: center;
+}
