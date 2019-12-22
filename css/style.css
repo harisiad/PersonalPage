@@ -9,31 +9,40 @@ body
 {
     width: 100vw;
     height: 100vh;
-    
-    /*border-bottom: 1px groove rgba(255, 255, 255, 0.7);
-    border-bottom-left-radius: 5%;*/
 }
 
 div#headerMenu
 {
+    position: fixed;
+    z-index: 1000;
+    left:0%;
     width: inherit;
-    height: 5%;
+    height: 7%;
+    background-color: #1b1b1b;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
 div#logoMenu
-{
+{   
     width: 10%;
 }
 
-#logo
+a#logo
 {
-    font-size: 25px;
+    font-size: 20px;
+    text-decoration: none;
     color: rgb(255, 255, 255,0.7);
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 0px 1px 0px rgb(255, 255, 255,.2), 0px -1px 0px rgba(0,0,0,.7);
+    padding: 11px 32px;
+}
+
+#logo:hover
+{
+    color: rgba(255, 255, 255, 0.7);
+    background-color: rgb(36, 36, 36);
 }
 
 div#sectionMenu
@@ -47,25 +56,37 @@ div#blankSpace
     width: 49%;
 }
 
-div#sectionMenu table
+div#sectionMenu ul
 {
+    list-style-type: none;
+    overflow: hidden;
     width: 49.5%;
     margin: 0;
     padding: 0;
 }
 
-div#sectionMenu td
+div#sectionMenu li
 {
-    margin: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-right: 0px;
+    float: right;
+}
+
+div#sectionMenu li a
+{
+    display: block;
+    text-decoration: none;
     padding-left: 30px;
-    font-size: 25px;
+    font-size: 20px;
     color: rgb(255, 255, 255,0.7);
-    text-align: center;
+    text-align: right;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 0px 1px 0px rgb(255, 255, 255,.2), 0px -1px 0px rgba(0,0,0,.7);
+    padding: 11px 16px;
+}
+
+div#sectionMenu li a:hover
+{
+    color: rgb(255, 255, 255, 0.4);
+    background-color: rgb(36, 36, 36);
 }
 
 .page#StartPage
@@ -76,7 +97,7 @@ div#sectionMenu td
 
 div#mainName
 {
-    height: 95%;
+    height: 93%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,18 +105,17 @@ div#mainName
 
 p#name
 {
-    text-decoration-style: double;
     color: rgba(255, 255, 255, 0.7);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     text-shadow: 0px 1px 0px rgba(255, 255, 255,.2), 0px -1px 0px rgba(0,0,0,.7);
 }
 
-.div-transparent
+.div-transparent:before
 {
 	content: "";
 	position: absolute;
-	bottom: -7px;
+	bottom: 10px;
 	left: 5%;
 	right: 5%;
 	width: 90%;
@@ -107,8 +127,7 @@ p#name
 {
     content: "";
 	position: absolute;
-	z-index: 1;
-	bottom: -7px;
+	bottom: 3px;
 	left: calc(50% - 7px);
 	width: 14px;
 	height: 14px;
