@@ -2,12 +2,13 @@ body
 {
     margin: 0%;
     padding: 0%;
+    width: 100vw;
     overflow-x: hidden;
 }
 
 .page
 {
-    width: 100vw;
+    width: inherit;
     height: 100vh;
 }
 
@@ -137,4 +138,76 @@ p#name
 	background-color: #202020;
 	border-bottom: 1px solid rgb(255, 255, 255, 0.7);
     border-right: 1px solid rgb(255, 255, 255, 0.7);
+}
+
+div.bottom-nav-wrapper
+{
+    position: fixed;
+    bottom: 3%;
+    left: 0%;
+    width: inherit;
+    height: 7%;
+    
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.bottom-nav-wrapper#blankSpace1
+{
+    width: 94%;
+    
+    overflow: hidden;
+}
+
+div.arrow-up-wrapper
+{
+    position: fixed;
+    left: initial;
+    right: 2%;
+    width: 4%;
+    height: 8%;
+    z-index: 1;
+    display: none;
+    background-color: rgb(27,27,27);
+    border-radius: 20%;
+}
+
+div.arrow-up-wrapper:after
+{
+    display: block;
+}
+
+div.arrow-up-wrapper:hover
+{
+    cursor: pointer;
+}
+
+a.arrow-up-wrapper
+{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+i.arrow-up
+{
+    border: solid rgb(255, 255, 255, 0.7);
+    border-width: 0px 3px 3px 0px;
+    display: inline-block;
+    padding: 3px;
+
+    transform: rotate(-135deg);
+}
+
+div.bottom-nav-wrapper#blankSpace2
+{
+    left: initial;
+    right: 0%;
+    width: 2%;
+    
+    overflow: hidden;
 }
